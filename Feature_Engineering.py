@@ -197,7 +197,7 @@ tsne = TSNE(n_components=3, perplexity=30)
 Y = tsne.fit_transform(X)
 
 fig = plt.figure()
-ax1 = fig.add_subplot(111, projection='3d')
+ax1 = fig.add_subplot(221, projection='3d')
 ax1.set_title('3D Visualisation by t-SNE')
 ax1.scatter(Y[orange, 0], Y[orange,1], Y[orange,2], c="orange", alpha=0.1)
 ax1.scatter(Y[blue, 0], Y[blue, 1], Y[blue, 2], c="b", alpha=0.1)
